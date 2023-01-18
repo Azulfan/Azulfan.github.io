@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+#headerku {
+  background-color: #2dcddf !important;
+}
+
+#iconBurger {
+  color: white !important;
+}
+
+.active2 {
+  background-color: #0081c9;
+  border-radius: 10px;
+}
+
+#headerku ul li {
+  margin-left: 20px;
+}
