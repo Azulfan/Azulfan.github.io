@@ -23,14 +23,10 @@
 
     <!--Bootstrap Icons-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
-
-    <style>
-      /* CSS nya juga bisa di tulis di sini */
-    </style>
   </head>
 
-  <body>
-    <nav id="headerku" class="navbar navbar-expand-sm navbar-dark bg-dark" aria-label="#">
+  <body class="dark-mode">
+    <nav id="headerku" class="navbar navbar-expand-sm navbar-dark fixed-top" aria-label="#">
       <div class="container">
         <a class="navbar-brand" href="#">
           <img src="assets/brand/4519076_gg_icon.png" width="50px" alt="" />
@@ -40,22 +36,106 @@
           <i class="bi bi-list" id="iconBurger"></i>
         </button>
         <div class="collapse navbar-collapse" id="menuResponsive">
-          <ul class="navbar-nav m-auto mb-2 mb-sm-0">
+          <ul class="navbar-nav ms-auto mb-2 mb-sm-0">
             <li class="nav-item">
               <a class="nav-link active active2" aria-current="page" href="#">Dashboard</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="#">Tentang Saya</a>
+              <a class="nav-link active" href="#carouselExample">Scholarsystem</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="#">Kontak</a>
+              <a class="nav-link active" href="#">Planets</a>
             </li>
           </ul>
-          <form role="search">
-            <input class="form-control" type="search" placeholder="Search" aria-label="Search" />
-          </form>
         </div>
       </div>
     </nav>
+
+    <div class="hero container">
+      <header>
+        <h5 class="text-blue">Hallo Semua 👋, Saya</h5>
+        <h1 class="fw-bold text-white">Ahmad Zulfan</h1>
+        <h4><span class="text-white">Design</span><span class="text-blue"> || Web Programming</span></h4>
+        <p class="text-white">Belajar web progamming itu mudah dan menyenangkan.</p>
+      </header>
+      <div class="hero-image">
+        <img src="assets/dist/images/sun.png" alt="" />
+      </div>
+    </div>
+
+    <h2 id="scolar" class="text-center text-white mb-3 mt-5">Our Scolar System</h2>
+    <div id="carouselExample" class="carousel slide mt-5">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="assets/dist/images/earth.png" width="400px" class="d-block" alt="..." />
+          <div class="carousel-caption d-none d-md-block">
+            <h2>Earth</h2>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="assets/dist/images/jupiter.png" width="400px" class="d-block" alt="..." />
+          <div class="carousel-caption d-none d-md-block">
+            <h2>Jupiter</h2>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="assets/dist/images/mars.png" width="400px" class="d-block" alt="..." />
+          <div class="carousel-caption d-none d-md-block">
+            <h2>Mars</h2>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="assets/dist/images/venus.png" width="400px" class="d-block" alt="..." />
+          <div class="carousel-caption d-none d-md-block">
+            <h2>Venus</h2>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="assets/dist/images/merkurius.png" width="400px" class="d-block" alt="..." />
+          <div class="carousel-caption d-none d-md-block">
+            <h2>merkurius</h2>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="assets/dist/images/sun.png" width="400px" class="d-block" alt="..." />
+          <div class="carousel-caption d-none d-md-block">
+            <h2>Sun</h2>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <div class="container mt-5">
+      <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Home</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Profile</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">Contact</button>
+        </li>
+      </ul>
+      <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active text-white" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem explicabo molestias harum aspernatur eius repellat voluptatibus eos soluta laborum nulla excepturi aut, animi neque, obcaecati inventore ipsam officiis quia quis.
+        </div>
+        <div class="tab-pane fade text-white" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem explicabo molestias harum aspernatur eius repellat voluptatibus eos soluta laborum nulla excepturi aut, animi neque, obcaecati inventore ipsam officiis quia quis.
+        </div>
+        <div class="tab-pane fade text-white" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem explicabo molestias harum aspernatur eius repellat voluptatibus eos soluta laborum nulla excepturi aut, animi neque, obcaecati inventore ipsam officiis quia quis.
+        </div>
+      </div>
+    </div>
   </body>
 </html>

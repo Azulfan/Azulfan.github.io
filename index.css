@@ -2,10 +2,25 @@
 
 body {
   font-family: 'Poppins', sans-serif;
+  background-color: #2dcddf !important;
+  height: 300vh;
+}
+
+.text-blue {
+  color: #0081c9;
+}
+.text-secondary {
+  color: #87818b;
+}
+.text-white {
+  color: #fff;
+}
+.dark-mode {
+  background-color: #202020 !important;
 }
 
 #headerku {
-  background-color: #2dcddf !important;
+  background-color: rgba(0, 0, 0, 0) !important;
 }
 
 #iconBurger {
@@ -18,5 +33,21 @@ body {
 }
 
 #headerku ul li {
-  margin-left: 20px;
+  margin-left: 5px;
+}
+
+.hero {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.carousel-item img {
+  margin: 0 auto;
+}
+.carousel-caption {
+  margin-bottom: -50px;
+}
+#scolar {
+  margin-top: 100px !important;
 }
