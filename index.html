@@ -10,6 +10,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet" />
 
+    <!-- FontsAwesome -->
+    <link href="assets/fontawesome/css/fontawesome.css" rel="stylesheet" />
+    <link href="assets/fontawesome/css/solid.css" rel="stylesheet" />
+    <link href="assets/fontawesome/css/brands.css" rel="stylesheet" />
+
     <link rel="shortcut icon" href="assets/brand/4519076_gg_icon.png" />
 
     <!--Bootstrap JS-->
@@ -25,8 +30,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
   </head>
 
-  <body class="dark-mode">
-    <nav id="headerku" class="navbar navbar-expand-sm navbar-dark fixed-top" aria-label="#">
+  <body class="light-mode">
+    <nav id="headerku" class="navbar sticky navbar-expand-sm navbar-dark fixed-top" aria-label="#">
       <div class="container">
         <a class="navbar-brand" href="#">
           <img src="assets/brand/4519076_gg_icon.png" width="50px" alt="" />
@@ -41,10 +46,10 @@
               <a class="nav-link active active2" aria-current="page" href="#">Dashboard</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="#carouselExample">Scholarsystem</a>
+              <a class="nav-link active" href="#tentangSaya">Tentang Saya</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="#">Planets</a>
+              <a class="nav-link active" href="#projectku">MyProject</a>
             </li>
           </ul>
         </div>
@@ -54,88 +59,96 @@
     <div class="hero container">
       <header>
         <h5 class="text-blue">Hallo Semua 👋, Saya</h5>
-        <h1 class="fw-bold text-white">Ahmad Zulfan</h1>
-        <h4><span class="text-white">Design</span><span class="text-blue"> || Web Programming</span></h4>
-        <p class="text-white">Belajar web progamming itu mudah dan menyenangkan.</p>
+        <h1 class="fw-bold text-secondary">Ahmad Zulfan</h1>
+        <h4><span class="text-secondary">Design</span><span class="text-blue"> || Web Programming</span></h4>
+        <p class="text-secondary">Belajar web progamming itu mudah dan menyenangkan.</p>
+        <button class="btn btn-default">
+          <i class="fa-solid fa-phone me-2"></i>
+          Contact Us
+        </button>
       </header>
       <div class="hero-image">
-        <img src="assets/dist/images/sun.png" alt="" />
+        <img width="100%" src="assets/dist/images/venus.png" alt="" />
       </div>
     </div>
 
-    <h2 id="scolar" class="text-center text-white mb-3 mt-5">Our Scolar System</h2>
-    <div id="carouselExample" class="carousel slide mt-5">
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="assets/dist/images/earth.png" width="400px" class="d-block" alt="..." />
-          <div class="carousel-caption d-none d-md-block">
-            <h2>Earth</h2>
+    <div id="tentangSaya">
+      <section id="tentang-saya" class="m-auto pb-5 pt-5">
+        <h1 class="text-center fw-bold text-secondary">Tentang Saya</h1>
+        <div class="container">
+          <div class="row g-5 mt-3">
+            <div class="col-md-6">
+              <h4 class="fw-bold text-secondary">Ayo Belajar Programming!</h4>
+              <p>Saya merupakan seorang FullStack Developer serta seorang mahasiswa pada ITSNU Pekalongan. Saya memiliki niat menjadi web dev.</p>
+              <ul class="icon-list ps-0">
+                <li class="text-muted d-flex align-items-start mb-1">Bootstrap Parcel starter (coming soon!)</li>
+              </ul>
+            </div>
+            <div class="col-md-6">
+              <h4 class="fw-bold text-secondary">Berteman?</h4>
+              <p>Mari berteman denganku agar kita bisa saling mengobrol sekaligus menambahkan koneksi.</p>
+              <ul id="icon-list" class="icon-list ps-0">
+                <li class="text-muted d-flex align-items-start mb-1">
+                  <i class="fa-brands fa-facebook fa-xl"></i>
+                </li>
+                <li class="text-muted d-flex align-items-start mb-1">
+                  <i class="fa-brands fa-github fa-xl"></i>
+                </li>
+                <li class="text-muted d-flex align-items-start mb-1">
+                  <i class="fa-brands fa-twitter fa-xl"></i>
+                </li>
+                <li class="text-muted d-flex align-items-start mb-1">
+                  <i class="fa-brands fa-instagram fa-xl"></i>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
-        <div class="carousel-item">
-          <img src="assets/dist/images/jupiter.png" width="400px" class="d-block" alt="..." />
-          <div class="carousel-caption d-none d-md-block">
-            <h2>Jupiter</h2>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img src="assets/dist/images/mars.png" width="400px" class="d-block" alt="..." />
-          <div class="carousel-caption d-none d-md-block">
-            <h2>Mars</h2>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img src="assets/dist/images/venus.png" width="400px" class="d-block" alt="..." />
-          <div class="carousel-caption d-none d-md-block">
-            <h2>Venus</h2>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img src="assets/dist/images/merkurius.png" width="400px" class="d-block" alt="..." />
-          <div class="carousel-caption d-none d-md-block">
-            <h2>merkurius</h2>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img src="assets/dist/images/sun.png" width="400px" class="d-block" alt="..." />
-          <div class="carousel-caption d-none d-md-block">
-            <h2>Sun</h2>
-          </div>
-        </div>
-      </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
+      </section>
     </div>
 
-    <div class="container mt-5">
-      <ul class="nav nav-tabs" id="myTab" role="tablist">
-        <li class="nav-item" role="presentation">
-          <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Home</button>
-        </li>
-        <li class="nav-item" role="presentation">
-          <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Profile</button>
-        </li>
-        <li class="nav-item" role="presentation">
-          <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">Contact</button>
-        </li>
-      </ul>
-      <div class="tab-content" id="myTabContent">
-        <div class="tab-pane fade show active text-white" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem explicabo molestias harum aspernatur eius repellat voluptatibus eos soluta laborum nulla excepturi aut, animi neque, obcaecati inventore ipsam officiis quia quis.
-        </div>
-        <div class="tab-pane fade text-white" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem explicabo molestias harum aspernatur eius repellat voluptatibus eos soluta laborum nulla excepturi aut, animi neque, obcaecati inventore ipsam officiis quia quis.
-        </div>
-        <div class="tab-pane fade text-white" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem explicabo molestias harum aspernatur eius repellat voluptatibus eos soluta laborum nulla excepturi aut, animi neque, obcaecati inventore ipsam officiis quia quis.
-        </div>
+    <section id="projectku">
+      <div class="container pb-5 pt-5">
+        <header>
+          <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
+            <h1 class="text-secondary fw-bold">ProjectKu</h1>
+            <p class="text-muted">Ini merupakan sebuah project yang telah saya develop.</p>
+          </div>
+        </header>
+        <main>
+          <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+            <div class="col">
+              <div class="card mb-4 rounded-3 shadow-sm">
+                <div class="card-body">
+                  <img width="100%" src="assets/img/projek/company-profile.jpg" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card mb-4 rounded-3 shadow-sm">
+                <div class="card-body">
+                  <img width="100%" src="assets/img/projek/personal-website.jpg" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card mb-4 rounded-3 shadow-sm">
+                <div class="card-body">
+                  <img width="100%" src="assets/img/projek/concise-url.jpg" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
       </div>
-    </div>
+    </section>
+    <footer class="text-muted py-5">
+      <div class="container">
+        <p class="float-end mb-1">
+          <a href="#">Copyright</a>
+        </p>
+        <p class="mb-1 text-white">Created with love by<a href="/"> @ahmadzulfan</a></p>
+      </div>
+    </footer>
   </body>
 </html>
